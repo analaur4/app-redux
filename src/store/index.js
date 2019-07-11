@@ -1,4 +1,8 @@
-import { createStore } from 'redux';
-import { Reducers } from '../reducers';
+import { createStore, combineReducers } from 'redux';
+import clickReducer from './ducks/index'
 
-export const Store = createStore(Reducers);
+export const reducers = combineReducers({
+    clickState: clickReducer,
+})
+
+export const Store = createStore(reducers);

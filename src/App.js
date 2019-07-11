@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { clickButton } from './actions';
+import { clickButton } from './store/ducks/index';
 
 class App extends Component {
 
